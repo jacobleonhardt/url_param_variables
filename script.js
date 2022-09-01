@@ -10,6 +10,6 @@ function nextPage() {
 function getParams() {
   const params = new URLSearchParams(window.location.search)
   const data = params.get("data")
-  const placement = document.querySelector("#view-results")
-  placement.innerHTML(data)
+  const placement = document.querySelector('#view-results')
+  placement.innerHTML = `<span>${data}</span>`
 }
